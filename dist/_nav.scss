@@ -1,0 +1,16 @@
+nav {
+  color: #fff;
+  font-family: "Baskervville", serif;
+  padding: 20px 40px;
+
+  ul {
+    @include flex(center, center);
+    list-style-type: none;
+
+    li {
+      text-transform: uppercase;
+      padding: 0 30px;
+      cursor: pointer;
+    }
+  }
+}

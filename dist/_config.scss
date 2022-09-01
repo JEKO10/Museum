@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Bellefair&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+$primaryFont: "Poppins", sans-serif;
+$secondaryFont: "Bellefair", serif;
+
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
