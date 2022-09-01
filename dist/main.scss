@@ -1,4 +1,4 @@
-@import "config", "nav";
+@import "config", "nav", "header";
 
 * {
   margin: 0;
@@ -8,4 +8,5 @@
 
 body {
   background-color: #0d0d0d;
+  overflow-x: hidden;
 }

@@ -22,6 +22,16 @@ nav ul li {
   cursor: pointer;
 }
 
+header {
+  background: url("../../images/ellipse.png") right top no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+header .hero {
+  background: url("../../images/hero.png") center no-repeat;
+  height: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -31,4 +41,5 @@ nav ul li {
 
 body {
   background-color: #0d0d0d;
+  overflow-x: hidden;
 }/*# sourceMappingURL=main.css.map */
