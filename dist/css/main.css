@@ -23,13 +23,67 @@ nav ul li {
 }
 
 header {
-  background: url("../../images/ellipse.png") right top no-repeat;
+  background: url("../../images/ellipse.png") no-repeat;
   height: 100vh;
   overflow: hidden;
+  background-position: 100% 100px;
+  color: #fff;
 }
 header .hero {
   background: url("../../images/hero.png") center no-repeat;
   height: 100%;
+}
+
+.statue {
+  max-width: 85vw;
+  margin: 0 auto;
+}
+.statue > div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.statue > div:first-of-type h1 {
+  font-family: "Bellefair", serif;
+  font-size: 108px;
+  max-width: 556px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.statue > div:first-of-type img {
+  zoom: 0.95;
+  margin-left: -22rem;
+}
+.statue > div:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -10rem;
+  font-family: "Poppins", sans-serif;
+}
+.statue > div:last-of-type p:first-of-type {
+  font-size: 27px;
+  max-width: 441px;
+  font-weight: 200;
+  padding-right: 20px;
+}
+.statue > div:last-of-type p:last-of-type {
+  font-size: 24px;
+  max-width: 810px;
+  margin-top: -4rem;
+  font-weight: 200;
 }
 
 * {
@@ -42,4 +96,5 @@ header .hero {
 body {
   background-color: #0d0d0d;
   overflow-x: hidden;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

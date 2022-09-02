@@ -1,4 +1,4 @@
-@import "config", "nav", "header";
+@import "config", "nav", "header", "statue";
 
 * {
   margin: 0;
@@ -9,4 +9,5 @@
 body {
   background-color: #0d0d0d;
   overflow-x: hidden;
+  color: #fff;
 }

@@ -1,7 +1,9 @@
 header {
-  background: url("../../images/ellipse.png") right top no-repeat;
+  background: url("../../images/ellipse.png") no-repeat;
   height: 100vh;
   overflow: hidden;
+  background-position: 100% 100px;
+  color: #fff;
 
   .hero {
     background: url("../../images/hero.png") center no-repeat;

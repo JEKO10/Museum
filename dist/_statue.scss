@@ -1,0 +1,41 @@
+.statue {
+  max-width: 85vw;
+  margin: 0 auto;
+
+  > div:first-of-type {
+    @include flex(flex-start, center);
+
+    h1 {
+      font-family: $secondaryFont;
+      font-size: 108px;
+      max-width: 556px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    img {
+      zoom: 0.95;
+      margin-left: -22rem;
+    }
+  }
+
+  > div:last-of-type {
+    @include flex(flex-start, center);
+    margin-top: -10rem;
+    font-family: $primaryFont;
+
+    p:first-of-type {
+      font-size: 27px;
+      max-width: 441px;
+      font-weight: 200;
+      padding-right: 20px;
+    }
+
+    p:last-of-type {
+      font-size: 24px;
+      max-width: 810px;
+      margin-top: -4rem;
+      font-weight: 200;
+    }
+  }
+}
