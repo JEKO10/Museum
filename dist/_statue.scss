@@ -1,6 +1,22 @@
 .statue {
-  max-width: 85vw;
-  margin: 0 auto;
+  position: relative;
+  margin: 5rem 0;
+
+  > div {
+    max-width: 85vw;
+    margin: 0 auto;
+  }
+
+  > img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -2;
+
+    &#horizontal {
+      width: 100%;
+    }
+  }
 
   > div:first-of-type {
     @include flex(flex-start, center);
@@ -13,9 +29,18 @@
       text-transform: uppercase;
     }
 
-    img {
+    img:not(#vector) {
       zoom: 0.95;
       margin-left: -22rem;
+    }
+
+    #vector {
+      position: absolute;
+      top: -2rem;
+      right: 0;
+      width: 90%;
+      height: 62%;
+      z-index: -1;
     }
   }
 
@@ -24,18 +49,38 @@
     margin-top: -10rem;
     font-family: $primaryFont;
 
-    p:first-of-type {
+    > p:first-of-type {
       font-size: 27px;
       max-width: 441px;
       font-weight: 200;
       padding-right: 20px;
+      margin-bottom: 10rem;
     }
 
-    p:last-of-type {
-      font-size: 24px;
-      max-width: 810px;
-      margin-top: -4rem;
-      font-weight: 200;
+    div {
+      > p {
+        font-size: 24px;
+        max-width: 810px;
+        margin-top: -2rem;
+        font-weight: 200;
+      }
+
+      h3 {
+        @include flex(flex-start, center);
+        position: absolute;
+        bottom: 0;
+        left: 35%;
+        font-size: 32px;
+        font-family: $secondaryFont;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+
+        img {
+          zoom: 0.9;
+          margin-right: -5.5rem;
+        }
+      }
     }
   }
 }
