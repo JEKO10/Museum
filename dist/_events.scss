@@ -1,0 +1,55 @@
+.events {
+  max-width: 90vw;
+  margin: 0 auto;
+  font-family: $secondaryFont;
+
+  > article {
+    @include flex(space-between, center);
+    margin-bottom: 5rem;
+
+    > div {
+      @include flex(center, flex-start);
+      flex-direction: column;
+    }
+
+    .overline {
+      width: 197px;
+      height: 1px;
+      background-color: #727272;
+    }
+
+    h1 {
+      font-size: 71px;
+      font-weight: 400;
+      padding: 10px 0 20px;
+    }
+
+    .underline {
+      width: 730px;
+      height: 0.5px;
+      background-color: #b9b9b9;
+    }
+
+    p {
+      font-size: 22px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      display: block;
+      height: 80px;
+      width: 85px;
+      line-height: 80px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 500ms ease;
+
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}

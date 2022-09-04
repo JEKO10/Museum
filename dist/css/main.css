@@ -24,10 +24,32 @@ nav ul li {
 
 header {
   background: url("../../images/ellipse.png") no-repeat;
-  height: 100vh;
-  overflow: hidden;
+  background-size: 72%;
+  height: 110vh;
   background-position: 100% 100px;
   color: #fff;
+  position: relative;
+}
+header > div {
+  position: absolute;
+  bottom: -7rem;
+  left: 0;
+  background-color: rgba(17, 17, 17, 0.5);
+  width: 100%;
+  height: 30%;
+}
+header > div h1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 91px;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  max-width: 1140px;
+  text-align: center;
 }
 header .hero {
   background: url("../../images/hero.png") center no-repeat;
@@ -36,7 +58,7 @@ header .hero {
 
 .statue {
   position: relative;
-  margin: 5rem 0;
+  margin: 10rem 0;
 }
 .statue > div {
   max-width: 85vw;
@@ -129,6 +151,74 @@ header .hero {
 .statue > div:last-of-type div h3 img {
   zoom: 0.9;
   margin-right: -5.5rem;
+}
+
+.events {
+  max-width: 90vw;
+  margin: 0 auto;
+  font-family: "Bellefair", serif;
+}
+.events > article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+}
+.events > article > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.events > article .overline {
+  width: 197px;
+  height: 1px;
+  background-color: #727272;
+}
+.events > article h1 {
+  font-size: 71px;
+  font-weight: 400;
+  padding: 10px 0 20px;
+}
+.events > article .underline {
+  width: 730px;
+  height: 0.5px;
+  background-color: #b9b9b9;
+}
+.events > article p {
+  font-size: 22px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: block;
+  height: 80px;
+  width: 85px;
+  line-height: 80px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.events > article p:hover {
+  background-color: #fff;
+  color: #000;
+}
+.events img {
+  width: 100%;
 }
 
 * {
