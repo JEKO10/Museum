@@ -147,6 +147,7 @@ header .hero {
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 .statue > div:last-of-type div h3 img {
   zoom: 0.9;
@@ -155,10 +156,10 @@ header .hero {
 
 .events {
   max-width: 90vw;
-  margin: 0 auto;
+  margin: 0 auto 5rem;
   font-family: "Bellefair", serif;
 }
-.events > article {
+.events > article:first-of-type {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,7 +171,7 @@ header .hero {
           align-items: center;
   margin-bottom: 5rem;
 }
-.events > article > div {
+.events > article:first-of-type > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,22 +186,22 @@ header .hero {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.events > article .overline {
+.events > article:first-of-type .overline {
   width: 197px;
   height: 1px;
   background-color: #727272;
 }
-.events > article h1 {
+.events > article:first-of-type h1 {
   font-size: 71px;
   font-weight: 400;
   padding: 10px 0 20px;
 }
-.events > article .underline {
+.events > article:first-of-type .underline {
   width: 730px;
   height: 0.5px;
   background-color: #b9b9b9;
 }
-.events > article p {
+.events > article:first-of-type p {
   font-size: 22px;
   border: 1px solid #fff;
   border-radius: 50%;
@@ -213,12 +214,122 @@ header .hero {
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-.events > article p:hover {
+.events > article:first-of-type p:hover {
   background-color: #fff;
   color: #000;
 }
-.events img {
+.events > article:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+  padding: 0 40px;
+}
+.events .info {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+.events .info > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
   width: 100%;
+  padding-right: 70px;
+}
+.events .info > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.events .info .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: -2rem;
+}
+.events .info .name img {
+  padding: 3px 10px 0 0;
+}
+.events .info .name h1 {
+  font-size: 29px;
+  max-width: 353px;
+  text-transform: uppercase;
+  text-align: start;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+}
+.events .info > img {
+  width: 100%;
+}
+.events .info #number {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: 67px;
+  padding: 0 20px 0 30px;
+}
+.events .info h3 {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+.events .info p {
+  text-transform: uppercase;
+  max-width: 628px;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.events .info .buttons {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+}
+.events .info .buttons h2 {
+  font-weight: 400;
+  font-size: 19px;
+  cursor: pointer;
+}
+.events .info .buttons h2:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.events .info .buttons h2:last-of-type img {
+  margin-right: -1.5rem;
 }
 
 * {
