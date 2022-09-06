@@ -332,6 +332,22 @@ header .hero {
   margin-right: -1.5rem;
 }
 
+.gallery {
+  max-width: 90vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 * {
   margin: 0;
   padding: 0;

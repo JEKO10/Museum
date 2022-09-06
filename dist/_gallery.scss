@@ -1,0 +1,6 @@
+.gallery {
+  max-width: 90vw;
+  margin: 0 auto;
+  @include flex(center, flex-start);
+  flex-wrap: wrap;
+}
