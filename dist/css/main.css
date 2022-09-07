@@ -348,6 +348,53 @@ header .hero {
       flex-wrap: wrap;
 }
 
+.slider {
+  background-color: #171717;
+  max-width: 90vw;
+  margin: 5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 60px 0 50px;
+}
+.slider > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 7rem;
+}
+.slider .arrow {
+  margin: 0 3rem;
+  cursor: pointer;
+}
+.slider #main {
+  margin: 0 -5.5rem;
+  z-index: 1;
+  border: solid 1px;
+  -o-border-image: linear-gradient(rgb(225, 225, 225), rgba(0, 0, 0, 0)) 15/35px;
+     border-image: -webkit-gradient(linear, left top, left bottom, from(rgb(225, 225, 225)), to(rgba(0, 0, 0, 0))) 15/35px;
+     border-image: linear-gradient(rgb(225, 225, 225), rgba(0, 0, 0, 0)) 15/35px;
+}
+.slider > img {
+  cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;

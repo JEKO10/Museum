@@ -1,0 +1,30 @@
+.slider {
+  background-color: #171717;
+  max-width: 90vw;
+  margin: 5rem auto;
+  @include flex(center, center);
+  flex-direction: column;
+  padding: 60px 0 50px;
+
+  > div {
+    @include flex(center, center);
+    margin-bottom: 7rem;
+  }
+
+  .arrow {
+    margin: 0 3rem;
+    cursor: pointer;
+  }
+
+  #main {
+    margin: 0 -5.5rem;
+    z-index: 1;
+    border: solid 1px;
+    border-image: linear-gradient(rgba(225, 225, 225, 1), rgba(0, 0, 0, 0)) 15 /
+      35px;
+  }
+
+  > img {
+    cursor: pointer;
+  }
+}
