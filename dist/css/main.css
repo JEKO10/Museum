@@ -395,6 +395,105 @@ header .hero {
   cursor: pointer;
 }
 
+.product {
+  margin: 5rem 0;
+  position: relative;
+}
+.product > div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4rem;
+}
+.product > div:first-of-type > h1 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: 176px;
+  text-transform: uppercase;
+  max-width: 881px;
+  text-align: center;
+}
+.product .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 5rem;
+}
+.product .images .info {
+  position: relative;
+}
+.product .images .info img {
+  display: block;
+  width: 100%;
+}
+.product .images .info > div {
+  position: absolute;
+  bottom: 3rem;
+  left: 4rem;
+}
+.product .images .info > div h1 {
+  font-size: 76px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Bellefair", serif;
+}
+.product .images .info > div h3 {
+  font-size: 26px;
+  max-width: 520px;
+  font-weight: 200;
+  letter-spacing: 5px;
+  font-family: "Poppins", sans-serif;
+  line-height: 30px;
+}
+.product .images > div:first-of-type {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.product .images .wrapper {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0.1)));
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.1) 100%);
+  margin-right: -1rem;
+}
+.product .images .wrapper img {
+  position: relative;
+  z-index: -1;
+  zoom: 0.98;
+}
+.product h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.product h2:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.product h2:last-of-type img {
+  margin-right: -2rem;
+  zoom: 1.5;
+}
+
 * {
   margin: 0;
   padding: 0;

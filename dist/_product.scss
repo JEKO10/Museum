@@ -1,0 +1,91 @@
+.product {
+  margin: 5rem 0;
+  position: relative;
+
+  > div:first-of-type {
+    @include flex(space-between, center);
+    margin-bottom: 4rem;
+
+    > h1 {
+      font-family: $secondaryFont;
+      font-weight: 400;
+      font-size: 176px;
+      text-transform: uppercase;
+      max-width: 881px;
+      text-align: center;
+    }
+  }
+
+  .images {
+    @include flex(flex-end, flex-end);
+    margin-bottom: 5rem;
+
+    .info {
+      position: relative;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+
+      > div {
+        position: absolute;
+        bottom: 3rem;
+        left: 4rem;
+
+        h1 {
+          font-size: 76px;
+          font-weight: 400;
+          text-transform: uppercase;
+          font-family: $secondaryFont;
+        }
+
+        h3 {
+          font-size: 26px;
+          max-width: 520px;
+          font-weight: 200;
+          letter-spacing: 5px;
+          font-family: $primaryFont;
+          line-height: 30px;
+        }
+      }
+    }
+
+    > div:first-of-type {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .wrapper {
+      background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.1) 100%
+      );
+      margin-right: -1rem;
+
+      img {
+        position: relative;
+        z-index: -1;
+        zoom: 0.98;
+      }
+    }
+  }
+
+  h2 {
+    font-family: $primaryFont;
+    font-weight: 600;
+    font-size: 2.5rem;
+    cursor: pointer;
+
+    &:last-of-type {
+      @include flex(center, center);
+
+      img {
+        margin-right: -2rem;
+        zoom: 1.5;
+      }
+    }
+  }
+}
