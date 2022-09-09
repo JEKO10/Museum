@@ -433,15 +433,12 @@ header .hero {
 }
 .product .images .info {
   position: relative;
-}
-.product .images .info img {
-  display: block;
-  width: 100%;
+  margin-right: 1rem;
 }
 .product .images .info > div {
   position: absolute;
-  bottom: 3rem;
-  left: 4rem;
+  bottom: 4rem;
+  left: 3.5rem;
 }
 .product .images .info > div h1 {
   font-size: 76px;
@@ -453,28 +450,23 @@ header .hero {
   font-size: 26px;
   max-width: 520px;
   font-weight: 200;
-  letter-spacing: 5px;
+  letter-spacing: 5.5px;
   font-family: "Poppins", sans-serif;
   line-height: 30px;
 }
-.product .images > div:first-of-type {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.product .images .wrapper {
+.product .images .second {
   background: -webkit-gradient(linear, right top, left top, color-stop(50%, rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0.1)));
   background: linear-gradient(to left, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.1) 100%);
   margin-right: -1rem;
 }
-.product .images .wrapper img {
+.product .images .second img {
   position: relative;
   z-index: -1;
   zoom: 0.98;
 }
 .product h2 {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2.5rem;
   cursor: pointer;
 }
@@ -490,8 +482,157 @@ header .hero {
           align-items: center;
 }
 .product h2:last-of-type img {
-  margin-right: -2rem;
-  zoom: 1.5;
+  margin-right: -1.8rem;
+  zoom: 1.7;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 70px;
+  font-family: "Baskervville", serif;
+  margin: 10rem 0 5rem;
+}
+footer > div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+footer > div:first-of-type img {
+  zoom: 1.1;
+  margin-left: -12px;
+}
+footer > div:first-of-type ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+  margin-right: 4rem;
+}
+footer > div:first-of-type ul li {
+  text-transform: uppercase;
+  padding: 25px 0;
+  cursor: pointer;
+}
+footer > div:last-of-type {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  font-family: "Poppins", sans-serif;
+}
+footer > div:last-of-type h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Baskervville", serif;
+}
+footer > div:last-of-type form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer > div:last-of-type form label {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 0.8rem;
+  padding: 5px 0 20px;
+}
+footer > div:last-of-type form input {
+  width: 100%;
+  background: none;
+  border: 1.5px solid #fff;
+  font-family: "Baskervville", serif;
+  color: #fff;
+  padding: 20px 30px;
+  margin-bottom: 1rem;
+}
+footer > div:last-of-type form input::-webkit-input-placeholder {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+footer > div:last-of-type form input::-moz-placeholder {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+footer > div:last-of-type form input:-ms-input-placeholder {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+footer > div:last-of-type form input::-ms-input-placeholder {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+footer > div:last-of-type form input::placeholder {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+footer > div:last-of-type form button {
+  width: 40%;
+  background-color: #272727;
+  color: #fff;
+  padding: 20px 30px;
+  border: 1.5px solid #fff;
+  font-family: "Baskervville", serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+footer > div:last-of-type p {
+  text-transform: uppercase;
+  font-weight: 200;
+}
+footer > div:last-of-type h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+footer > div:last-of-type h4 img {
+  margin-right: 1rem;
 }
 
 * {

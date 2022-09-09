@@ -1,0 +1,95 @@
+footer {
+  @include flex(space-between, flex-start);
+  padding: 0 70px;
+  font-family: "Baskervville", serif;
+  margin: 10rem 0 5rem;
+
+  > div:first-of-type {
+    @include flex(center, flex-end);
+
+    img {
+      zoom: 1.1;
+      margin-left: -12px;
+    }
+
+    ul {
+      @include flex(center, flex-start);
+      flex-direction: column;
+      list-style-type: none;
+      margin-right: 4rem;
+
+      li {
+        text-transform: uppercase;
+        padding: 25px 0;
+        cursor: pointer;
+      }
+    }
+  }
+
+  > div:last-of-type {
+    flex-basis: 45%;
+    font-family: $primaryFont;
+
+    h1 {
+      font-weight: 400;
+      text-transform: uppercase;
+      font-family: "Baskervville", serif;
+    }
+
+    form {
+      @include flex(center, flex-start);
+      flex-direction: column;
+
+      label {
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 0.8rem;
+        padding: 5px 0 20px;
+      }
+
+      input {
+        width: 100%;
+        background: none;
+        border: 1.5px solid #fff;
+        font-family: "Baskervville", serif;
+        color: #fff;
+        padding: 20px 30px;
+        margin-bottom: 1rem;
+
+        &::placeholder {
+          color: #fff;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+      }
+
+      button {
+        width: 40%;
+        background-color: #272727;
+        color: #fff;
+        padding: 20px 30px;
+        border: 1.5px solid #fff;
+        font-family: "Baskervville", serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        margin-bottom: 2rem;
+      }
+    }
+
+    p {
+      text-transform: uppercase;
+      font-weight: 200;
+    }
+
+    h4 {
+      @include flex(flex-start, center);
+      font-weight: 400;
+      margin: 1rem 0;
+
+      img {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
