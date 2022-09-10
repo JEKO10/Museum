@@ -1,0 +1,19 @@
+@include mediaLarge {
+  header {
+    background-size: 80%;
+
+    > div {
+      height: 35%;
+
+      h1 {
+        font-size: 5rem;
+      }
+    }
+
+    .hero {
+      background: url("../../images/hero.png") center no-repeat;
+      background-size: 95%;
+      height: 85%;
+    }
+  }
+}

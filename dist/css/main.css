@@ -50,6 +50,7 @@ header > div h1 {
   text-transform: uppercase;
   max-width: 1140px;
   text-align: center;
+  padding: 0 10px;
 }
 header .hero {
   background: url("../../images/hero.png") center no-repeat;
@@ -414,7 +415,7 @@ header .hero {
 .product > div:first-of-type > h1 {
   font-family: "Bellefair", serif;
   font-weight: 400;
-  font-size: 176px;
+  font-size: 6rem;
   text-transform: uppercase;
   max-width: 881px;
   text-align: center;
@@ -434,6 +435,9 @@ header .hero {
 .product .images .info {
   position: relative;
   margin-right: 1rem;
+}
+.product .images .info img {
+  zoom: 0.95;
 }
 .product .images .info > div {
   position: absolute;
@@ -457,12 +461,11 @@ header .hero {
 .product .images .second {
   background: -webkit-gradient(linear, right top, left top, color-stop(50%, rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0.1)));
   background: linear-gradient(to left, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.1) 100%);
-  margin-right: -1rem;
 }
 .product .images .second img {
   position: relative;
   z-index: -1;
-  zoom: 0.98;
+  zoom: 0.94;
 }
 .product h2 {
   font-family: "Poppins", sans-serif;
@@ -635,6 +638,22 @@ footer > div:last-of-type h4 img {
   margin-right: 1rem;
 }
 
+@media (max-width: 1200px) {
+  header {
+    background-size: 80%;
+  }
+  header > div {
+    height: 35%;
+  }
+  header > div h1 {
+    font-size: 5rem;
+  }
+  header .hero {
+    background: url("../../images/hero.png") center no-repeat;
+    background-size: 95%;
+    height: 85%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
