@@ -335,7 +335,7 @@ header .hero {
 
 .gallery {
   max-width: 90vw;
-  margin: 0 auto;
+  margin: 10rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -641,6 +641,7 @@ footer > div:last-of-type h4 img {
 @media (max-width: 1200px) {
   header {
     background-size: 80%;
+    background-position: 120% 100px;
   }
   header > div {
     height: 35%;
@@ -650,8 +651,8 @@ footer > div:last-of-type h4 img {
   }
   header .hero {
     background: url("../../images/hero.png") center no-repeat;
-    background-size: 95%;
-    height: 85%;
+    background-size: 85%;
+    height: 90%;
   }
   .statue > div:first-of-type h1 {
     font-size: 5.5rem;
@@ -669,6 +670,37 @@ footer > div:last-of-type h4 img {
   }
   .statue > div:last-of-type div h3 {
     left: 20%;
+  }
+  .events .info > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    bottom: 3rem;
+  }
+  .events .info .buttons {
+    padding: 0 40px;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .slider > div > img:not(.arrow) {
+    zoom: 0.75;
+  }
+  .product > div:first-of-type > img {
+    zoom: 0.75;
+  }
+  .product .images .info img {
+    zoom: 0.71;
+  }
+  .product .images .info > div {
+    bottom: 2rem;
+    left: 2rem;
+  }
+  .product .images .second img {
+    zoom: 0.7;
   }
 }
 * {

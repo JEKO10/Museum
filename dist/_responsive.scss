@@ -1,6 +1,7 @@
 @include mediaLarge {
   header {
     background-size: 80%;
+    background-position: 120% 100px;
 
     > div {
       height: 35%;
@@ -12,8 +13,8 @@
 
     .hero {
       background: url("../../images/hero.png") center no-repeat;
-      background-size: 95%;
-      height: 85%;
+      background-size: 85%;
+      height: 90%;
     }
   }
 
@@ -39,6 +40,47 @@
 
       div h3 {
         left: 20%;
+      }
+    }
+  }
+
+  .events .info {
+    > div {
+      flex-direction: column;
+      align-items: flex-start;
+      bottom: 3rem;
+    }
+
+    .buttons {
+      padding: 0 40px;
+      width: 100%;
+      margin-top: 2rem;
+    }
+  }
+
+  .slider > div > img:not(.arrow) {
+    zoom: 0.75;
+  }
+
+  .product {
+    > div:first-of-type > img {
+      zoom: 0.75;
+    }
+
+    .images {
+      .info {
+        img {
+          zoom: 0.71;
+        }
+
+        > div {
+          bottom: 2rem;
+          left: 2rem;
+        }
+      }
+
+      .second img {
+        zoom: 0.7;
       }
     }
   }
