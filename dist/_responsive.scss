@@ -16,4 +16,30 @@
       height: 85%;
     }
   }
+
+  .statue {
+    > div:first-of-type {
+      h1 {
+        font-size: 5.5rem;
+      }
+
+      img {
+        zoom: 0.75;
+      }
+
+      #vector {
+        top: -4rem;
+        width: 88%;
+        height: 53%;
+      }
+    }
+
+    > div:last-of-type {
+      margin-top: -5rem;
+
+      div h3 {
+        left: 20%;
+      }
+    }
+  }
 }

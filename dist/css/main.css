@@ -92,7 +92,7 @@ header .hero {
   font-weight: 400;
   text-transform: uppercase;
 }
-.statue > div:first-of-type img:not(#vector) {
+.statue > div:first-of-type img {
   zoom: 0.95;
   margin-left: -22rem;
 }
@@ -652,6 +652,23 @@ footer > div:last-of-type h4 img {
     background: url("../../images/hero.png") center no-repeat;
     background-size: 95%;
     height: 85%;
+  }
+  .statue > div:first-of-type h1 {
+    font-size: 5.5rem;
+  }
+  .statue > div:first-of-type img {
+    zoom: 0.75;
+  }
+  .statue > div:first-of-type #vector {
+    top: -4rem;
+    width: 88%;
+    height: 53%;
+  }
+  .statue > div:last-of-type {
+    margin-top: -5rem;
+  }
+  .statue > div:last-of-type div h3 {
+    left: 20%;
   }
 }
 * {
