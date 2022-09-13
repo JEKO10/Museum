@@ -114,3 +114,23 @@
     }
   }
 }
+
+@include mediaMedium {
+  .gallery > div {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@include mediaSmall {
+  .gallery > div {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+
+    img {
+      margin: 0.5rem 0;
+    }
+  }
+}

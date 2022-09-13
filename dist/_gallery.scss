@@ -1,6 +1,15 @@
 .gallery {
   max-width: 90vw;
   margin: 10rem auto;
-  @include flex(center, flex-start);
-  flex-wrap: wrap;
+
+  > div {
+    line-height: 0;
+    column-count: 3;
+    column-gap: 0;
+
+    img {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
 }
