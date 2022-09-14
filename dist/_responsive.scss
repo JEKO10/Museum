@@ -1,20 +1,9 @@
 @include mediaLarge {
   header {
-    background-size: 80%;
-    background-position: 120% 100px;
-
     > div {
-      height: 35%;
-
       h1 {
         font-size: 5rem;
       }
-    }
-
-    .hero {
-      background: url("../../images/hero.png") center no-repeat;
-      background-size: 85%;
-      height: 90%;
     }
   }
 
@@ -87,6 +76,25 @@
 }
 
 @include mediaMediumLarge {
+  header {
+    background-size: 80%;
+    background-position: 105% 30px;
+    height: 90vh;
+
+    .hero {
+      background-size: 98%;
+      background-position: bottom;
+    }
+
+    > div {
+      bottom: -3rem;
+
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+
   nav {
     .menuBtn {
       display: block;
