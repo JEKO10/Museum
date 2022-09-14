@@ -115,7 +115,7 @@ header .hero {
 
 .statue {
   position: relative;
-  margin: 10rem 0;
+  margin: 15rem 0 10rem;
 }
 .statue > div {
   max-width: 85vw;
@@ -790,6 +790,35 @@ footer > div:last-of-type h4 img {
   }
   nav ul.hide {
     display: none;
+  }
+  .statue > img#horizontal {
+    height: 70%;
+  }
+  .statue > div:first-of-type img {
+    zoom: 0.5;
+  }
+  .statue > div:first-of-type #vector {
+    top: -12rem;
+    width: 70%;
+    height: 50%;
+  }
+  .statue > div:last-of-type {
+    margin-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .statue > div:last-of-type p:first-of-type {
+    max-width: 100%;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+  }
+  .statue > div:last-of-type div h3 {
+    position: static;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {

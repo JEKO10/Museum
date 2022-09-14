@@ -121,6 +121,41 @@
       }
     }
   }
+
+  .statue {
+    > img {
+      &#horizontal {
+        height: 70%;
+      }
+    }
+    > div:first-of-type {
+      img {
+        zoom: 0.5;
+      }
+
+      #vector {
+        top: -12rem;
+        width: 70%;
+        height: 50%;
+      }
+    }
+
+    > div:last-of-type {
+      margin-top: 0;
+      flex-direction: column;
+
+      p:first-of-type {
+        max-width: 100%;
+        margin-bottom: 3rem;
+        font-size: 1.5rem;
+      }
+
+      div h3 {
+        position: static;
+        justify-content: center;
+      }
+    }
+  }
 }
 
 @include mediaMedium {
