@@ -47,7 +47,7 @@
     }
   }
 
-  .slider > div > img:not(.arrow) {
+  .slider > div > div > img {
     zoom: 0.75;
   }
 
@@ -195,6 +195,23 @@
 
       .buttons {
         margin-top: 1.5rem;
+      }
+    }
+  }
+
+  .slider > div {
+    flex-direction: column;
+    margin-bottom: 3rem;
+
+    #leftArrow {
+      display: none;
+    }
+
+    > div {
+      margin-bottom: 3rem;
+
+      #fixedArrow {
+        display: block;
       }
     }
   }

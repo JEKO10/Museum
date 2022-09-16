@@ -439,6 +439,20 @@ header .hero {
           align-items: center;
   margin-bottom: 7rem;
 }
+.slider > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slider > div > div #fixedArrow {
+  display: none;
+}
 .slider .arrow {
   margin: 0 3rem;
   cursor: pointer;
@@ -733,7 +747,7 @@ footer > div:last-of-type h4 img {
     width: 100%;
     margin-top: 2rem;
   }
-  .slider > div > img:not(.arrow) {
+  .slider > div > div > img {
     zoom: 0.75;
   }
   .product > div:first-of-type > img {
@@ -853,6 +867,22 @@ footer > div:last-of-type h4 img {
   }
   .events .info .buttons {
     margin-top: 1.5rem;
+  }
+  .slider > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  .slider > div #leftArrow {
+    display: none;
+  }
+  .slider > div > div {
+    margin-bottom: 3rem;
+  }
+  .slider > div > div #fixedArrow {
+    display: block;
   }
 }
 @media screen and (max-width: 768px) {

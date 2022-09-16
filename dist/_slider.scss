@@ -9,6 +9,14 @@
   > div {
     @include flex(center, center);
     margin-bottom: 7rem;
+
+    > div {
+      @include flex(center, center);
+
+      #fixedArrow {
+        display: none;
+      }
+    }
   }
 
   .arrow {
