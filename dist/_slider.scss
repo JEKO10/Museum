@@ -1,7 +1,7 @@
 .slider {
   background-color: #171717;
   max-width: 90vw;
-  margin: 5rem auto;
+  margin: 10rem auto;
   @include flex(center, center);
   flex-direction: column;
   padding: 60px 0 50px;
@@ -30,6 +30,8 @@
     border: solid 1px;
     border-image: linear-gradient(rgba(225, 225, 225, 1), rgba(0, 0, 0, 0)) 15 /
       35px;
+    height: 655px;
+    width: 420px;
   }
 
   > img {

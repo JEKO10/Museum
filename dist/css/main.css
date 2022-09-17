@@ -289,6 +289,9 @@ header .hero {
   margin-top: 3rem;
   padding: 0 40px;
 }
+.events > article:last-of-type img {
+  cursor: pointer;
+}
 .events .info {
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -411,7 +414,7 @@ header .hero {
 .slider {
   background-color: #171717;
   max-width: 90vw;
-  margin: 5rem auto;
+  margin: 10rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,13 +467,15 @@ header .hero {
   -o-border-image: linear-gradient(rgb(225, 225, 225), rgba(0, 0, 0, 0)) 15/35px;
      border-image: -webkit-gradient(linear, left top, left bottom, from(rgb(225, 225, 225)), to(rgba(0, 0, 0, 0))) 15/35px;
      border-image: linear-gradient(rgb(225, 225, 225), rgba(0, 0, 0, 0)) 15/35px;
+  height: 655px;
+  width: 420px;
 }
 .slider > img {
   cursor: pointer;
 }
 
 .product {
-  margin: 5rem 0;
+  margin: 10rem 0;
   position: relative;
 }
 .product > div:first-of-type {
@@ -883,6 +888,9 @@ footer > div:last-of-type h4 img {
   }
   .slider > div > div #fixedArrow {
     display: block;
+  }
+  .slider > div > div img {
+    zoom: 0.65;
   }
   .product > div:first-of-type > img {
     zoom: 0.5;
