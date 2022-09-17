@@ -215,6 +215,45 @@
       }
     }
   }
+
+  .product {
+    > div:first-of-type {
+      > img {
+        zoom: 0.5;
+      }
+
+      h1 {
+        font-size: 5rem;
+      }
+    }
+
+    .images {
+      .info {
+        > div {
+          h1 {
+            font-size: 3.5rem;
+          }
+
+          h3 {
+            font-size: 1.2rem;
+            line-height: 25px;
+          }
+        }
+
+        img {
+          zoom: 0.56;
+        }
+      }
+
+      .second img {
+        zoom: 0.55;
+      }
+    }
+  }
+
+  footer > div:last-of-type form button {
+    width: auto;
+  }
 }
 
 @include mediaMedium {

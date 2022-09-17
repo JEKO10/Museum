@@ -884,6 +884,28 @@ footer > div:last-of-type h4 img {
   .slider > div > div #fixedArrow {
     display: block;
   }
+  .product > div:first-of-type > img {
+    zoom: 0.5;
+  }
+  .product > div:first-of-type h1 {
+    font-size: 5rem;
+  }
+  .product .images .info > div h1 {
+    font-size: 3.5rem;
+  }
+  .product .images .info > div h3 {
+    font-size: 1.2rem;
+    line-height: 25px;
+  }
+  .product .images .info img {
+    zoom: 0.56;
+  }
+  .product .images .second img {
+    zoom: 0.55;
+  }
+  footer > div:last-of-type form button {
+    width: auto;
+  }
 }
 @media screen and (max-width: 768px) {
   .gallery > div {
