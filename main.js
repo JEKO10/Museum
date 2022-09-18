@@ -18,7 +18,9 @@ const rightArrow = document.querySelector("#rightArrow");
 const firstImg = document.querySelector("#firstImg");
 const main = document.querySelector("#main");
 const lastImg = document.querySelector("#lastImg");
+const inner = document.querySelector(".inner");
 let counter = 0;
+let innerLeft;
 const images = [
   "./images/gallery1.png",
   "./images/slider3.png",
@@ -36,18 +38,11 @@ left.forEach((leftArrow) => {
     if (counter === 0) {
       firstImg.src = images[2];
     }
+    if (counter === 0) innerLeft = 50;
+    if (counter === 1) innerLeft = 83;
+    if (counter === 2) innerLeft = 18;
+    inner.style.left = innerLeft + "%";
     main.src = images[counter];
-    // if (counter === 1) {
-    //   firstImg.src = images[0];
-    //   lastImg.src = images[2];
-    // } else if (counter === 2) {
-    //   firstImg.src = images[1];
-    //   lastImg.src = images[0];
-    // } else {
-    //   firstImg.src = images[2];
-    //   lastImg.src = images[1];
-    // }
-    console.log(counter);
   });
 });
 
@@ -61,16 +56,9 @@ rightArrow.addEventListener("click", () => {
   if (counter === 2) {
     lastImg.src = images[0];
   }
+  if (counter === 0) innerLeft = 50;
+  if (counter === 1) innerLeft = 83;
+  if (counter === 2) innerLeft = 18;
+  inner.style.left = innerLeft + "%";
   main.src = images[counter];
-  // if (counter === 1) {
-  //   firstImg.src = images[0];
-  //   lastImg.src = images[2];
-  // } else if (counter === 2) {
-  //   firstImg.src = images[1];
-  //   lastImg.src = images[0];
-  // } else {
-  //   firstImg.src = images[2];
-  //   lastImg.src = images[1];
-  // }
-  console.log(counter);
 });

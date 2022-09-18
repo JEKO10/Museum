@@ -6,7 +6,7 @@
   flex-direction: column;
   padding: 60px 0 50px;
 
-  > div {
+  > div:not(.outer) {
     @include flex(center, center);
     margin-bottom: 7rem;
 
@@ -15,6 +15,13 @@
 
       #fixedArrow {
         display: none;
+      }
+
+      &:first-of-type {
+        > img:not(#main) {
+          height: 443px;
+          width: 306px;
+        }
       }
     }
   }
@@ -34,7 +41,22 @@
     width: 420px;
   }
 
-  > img {
-    cursor: pointer;
+  .outer {
+    background-image: url("../../images/sliderOuter.png");
+    height: 6px;
+    width: 90px;
+    border-radius: 10px;
+    position: relative;
+
+    .inner {
+      background-color: #fff;
+      height: 3px;
+      width: 30px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 1s ease;
+    }
   }
 }

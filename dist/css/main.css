@@ -430,7 +430,7 @@ header .hero {
           flex-direction: column;
   padding: 60px 0 50px;
 }
-.slider > div {
+.slider > div:not(.outer) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,7 +442,7 @@ header .hero {
           align-items: center;
   margin-bottom: 7rem;
 }
-.slider > div > div {
+.slider > div:not(.outer) > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -453,8 +453,12 @@ header .hero {
       -ms-flex-align: center;
           align-items: center;
 }
-.slider > div > div #fixedArrow {
+.slider > div:not(.outer) > div #fixedArrow {
   display: none;
+}
+.slider > div:not(.outer) > div:first-of-type > img:not(#main) {
+  height: 443px;
+  width: 306px;
 }
 .slider .arrow {
   margin: 0 3rem;
@@ -470,8 +474,24 @@ header .hero {
   height: 655px;
   width: 420px;
 }
-.slider > img {
-  cursor: pointer;
+.slider .outer {
+  background-image: url("../../images/sliderOuter.png");
+  height: 6px;
+  width: 90px;
+  border-radius: 10px;
+  position: relative;
+}
+.slider .outer .inner {
+  background-color: #fff;
+  height: 3px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .product {
