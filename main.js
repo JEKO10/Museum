@@ -62,3 +62,33 @@ rightArrow.addEventListener("click", () => {
   inner.style.left = innerLeft + "%";
   main.src = images[counter];
 });
+
+const prev = document.querySelector("#prev");
+const next = document.querySelector("#next");
+const slides = document.querySelectorAll(".eventContainer .info");
+
+slides.forEach((slide, index) => {
+  slide.style.left = `${index * 105}%`;
+});
+
+let slideCounter = 0;
+
+next.addEventListener("click", function () {
+  slideCounter++;
+  if (slideCounter > 3) slideCounter = 4;
+
+  slides.forEach((slide) => {
+    slide.style.transform = `translateX(-${slideCounter * 105}%)`;
+  });
+  console.log(slideCounter);
+});
+
+prev.addEventListener("click", function () {
+  slideCounter--;
+  if (slideCounter < 0) slideCounter = 0;
+
+  slides.forEach((slide) => {
+    slide.style.transform = `translateX(-${slideCounter * 105}%)`;
+  });
+  console.log(slideCounter);
+});

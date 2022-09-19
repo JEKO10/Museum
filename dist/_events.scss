@@ -5,7 +5,7 @@
 
   > article:first-of-type {
     @include flex(space-between, center);
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 
     > div {
       @include flex(center, flex-start);
@@ -52,7 +52,7 @@
 
   > article:last-of-type {
     @include flex(space-between, center);
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding: 0 40px;
 
     img {
@@ -60,9 +60,24 @@
     }
   }
 
-  .info {
+  .eventContainer {
     position: relative;
+    overflow: hidden;
+    min-height: 655px;
+  }
+
+  .info {
+    @include flex(center, center);
+    position: absolute;
+    width: 100%;
     font-family: $primaryFont;
+    transition: all 1.5s ease;
+
+    > img {
+      position: relative;
+      min-height: 655px;
+      width: 100%;
+    }
 
     > div {
       @include flex(space-between, flex-end);
@@ -93,10 +108,6 @@
         font-family: $secondaryFont;
         font-weight: 400;
       }
-    }
-
-    > img {
-      width: 100%;
     }
 
     #number {

@@ -226,7 +226,7 @@ header .hero {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .events > article:first-of-type > div {
   display: -webkit-box;
@@ -286,15 +286,37 @@ header .hero {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 0 40px;
 }
 .events > article:last-of-type img {
   cursor: pointer;
 }
-.events .info {
+.events .eventContainer {
   position: relative;
+  overflow: hidden;
+  min-height: 655px;
+}
+.events .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 100%;
   font-family: "Poppins", sans-serif;
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
+.events .info > img {
+  position: relative;
+  min-height: 655px;
+  width: 100%;
 }
 .events .info > div {
   display: -webkit-box;
@@ -345,9 +367,6 @@ header .hero {
   text-align: start;
   font-family: "Bellefair", serif;
   font-weight: 400;
-}
-.events .info > img {
-  width: 100%;
 }
 .events .info #number {
   font-family: "Bellefair", serif;
