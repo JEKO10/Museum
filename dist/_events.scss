@@ -55,7 +55,27 @@
     margin-top: 2rem;
     padding: 0 40px;
 
-    img {
+    .outerProgress {
+      height: 18px;
+      width: 295px;
+      background: #282828;
+      border-radius: 20px;
+      position: relative;
+
+      .innerProgress {
+        height: 18px;
+        width: 47px;
+        background: #fff;
+        border-radius: 20px;
+        position: absolute;
+        top: 50%;
+        left: 8%;
+        transform: translate(-50%, -50%);
+        transition: all 1s ease;
+      }
+    }
+
+    div img {
       cursor: pointer;
     }
   }
@@ -75,14 +95,14 @@
 
     > img {
       position: relative;
-      min-height: 655px;
+      height: 655px;
       width: 100%;
     }
 
     > div {
       @include flex(space-between, flex-end);
       position: absolute;
-      bottom: 5rem;
+      bottom: 3.5rem;
       left: 0;
       width: 100%;
       padding-right: 70px;
@@ -129,6 +149,7 @@
       max-width: 628px;
       font-size: 15px;
       letter-spacing: 2px;
+      padding-right: 10px;
     }
 
     .buttons {

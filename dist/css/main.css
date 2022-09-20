@@ -289,7 +289,27 @@ header .hero {
   margin-top: 2rem;
   padding: 0 40px;
 }
-.events > article:last-of-type img {
+.events > article:last-of-type .outerProgress {
+  height: 18px;
+  width: 295px;
+  background: #282828;
+  border-radius: 20px;
+  position: relative;
+}
+.events > article:last-of-type .outerProgress .innerProgress {
+  height: 18px;
+  width: 47px;
+  background: #fff;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.events > article:last-of-type div img {
   cursor: pointer;
 }
 .events .eventContainer {
@@ -315,7 +335,7 @@ header .hero {
 }
 .events .info > img {
   position: relative;
-  min-height: 655px;
+  height: 655px;
   width: 100%;
 }
 .events .info > div {
@@ -329,7 +349,7 @@ header .hero {
       -ms-flex-align: end;
           align-items: flex-end;
   position: absolute;
-  bottom: 5rem;
+  bottom: 3.5rem;
   left: 0;
   width: 100%;
   padding-right: 70px;
@@ -385,6 +405,7 @@ header .hero {
   max-width: 628px;
   font-size: 15px;
   letter-spacing: 2px;
+  padding-right: 10px;
 }
 .events .info .buttons {
   -webkit-box-pack: justify;
@@ -494,7 +515,7 @@ header .hero {
   width: 420px;
 }
 .slider .outer {
-  background-image: url("../../images/sliderOuter.png");
+  background: #484848;
   height: 6px;
   width: 90px;
   border-radius: 10px;
@@ -502,7 +523,7 @@ header .hero {
 }
 .slider .outer .inner {
   background-color: #fff;
-  height: 3px;
+  height: 5px;
   width: 30px;
   position: absolute;
   top: 50%;

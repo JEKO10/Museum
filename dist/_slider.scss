@@ -42,7 +42,7 @@
   }
 
   .outer {
-    background-image: url("../../images/sliderOuter.png");
+    background: #484848;
     height: 6px;
     width: 90px;
     border-radius: 10px;
@@ -50,7 +50,7 @@
 
     .inner {
       background-color: #fff;
-      height: 3px;
+      height: 5px;
       width: 30px;
       position: absolute;
       top: 50%;

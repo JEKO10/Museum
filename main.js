@@ -66,12 +66,13 @@ rightArrow.addEventListener("click", () => {
 const prev = document.querySelector("#prev");
 const next = document.querySelector("#next");
 const slides = document.querySelectorAll(".eventContainer .info");
+const innerProgress = document.querySelector(".innerProgress");
+let slideCounter = 0;
+let progressLeft;
 
 slides.forEach((slide, index) => {
   slide.style.left = `${index * 105}%`;
 });
-
-let slideCounter = 0;
 
 next.addEventListener("click", function () {
   slideCounter++;
@@ -80,6 +81,11 @@ next.addEventListener("click", function () {
   slides.forEach((slide) => {
     slide.style.transform = `translateX(-${slideCounter * 105}%)`;
   });
+  if (slideCounter === 1) progressLeft = 25;
+  if (slideCounter === 2) progressLeft = 50;
+  if (slideCounter === 3) progressLeft = 75;
+  if (slideCounter === 4) progressLeft = 92;
+  innerProgress.style.left = progressLeft + "%";
   console.log(slideCounter);
 });
 
@@ -90,5 +96,10 @@ prev.addEventListener("click", function () {
   slides.forEach((slide) => {
     slide.style.transform = `translateX(-${slideCounter * 105}%)`;
   });
+  if (slideCounter === 0) progressLeft = 8;
+  if (slideCounter === 1) progressLeft = 25;
+  if (slideCounter === 2) progressLeft = 50;
+  if (slideCounter === 3) progressLeft = 75;
+  innerProgress.style.left = progressLeft + "%";
   console.log(slideCounter);
 });
