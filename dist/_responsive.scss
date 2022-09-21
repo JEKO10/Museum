@@ -172,7 +172,15 @@
       }
     }
 
+    .eventContainer {
+      min-height: 450px;
+    }
+
     .info {
+      > img {
+        height: 450px;
+      }
+
       .name {
         h1 {
           max-width: 100%;
@@ -185,12 +193,12 @@
       }
 
       #number {
-        padding: 0 40px 0 0;
+        padding: 0 30px 0 0;
       }
 
       p {
         max-width: 100%;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
       }
 
       .buttons {
@@ -308,6 +316,50 @@
         img {
           zoom: 0.7;
         }
+      }
+    }
+  }
+
+  .events {
+    .info {
+      > div > div:not(.buttons) {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .name {
+        h1 {
+          font-size: 1.7rem;
+        }
+
+        img {
+          padding: 0 6px 0 0;
+        }
+      }
+
+      > img {
+        height: 350px;
+      }
+
+      h3 {
+        font-size: initial;
+      }
+
+      p {
+        display: none;
+      }
+    }
+
+    .eventContainer {
+      min-height: 350px;
+    }
+
+    > article:last-of-type {
+      flex-direction: column-reverse;
+      margin-top: 1.5rem;
+
+      .outerProgress {
+        margin-top: 1rem;
       }
     }
   }

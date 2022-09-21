@@ -916,6 +916,12 @@ footer > div:last-of-type h4 img {
   .events > article:first-of-type p {
     margin-top: 1.5rem;
   }
+  .events .eventContainer {
+    min-height: 450px;
+  }
+  .events .info > img {
+    height: 450px;
+  }
   .events .info .name h1 {
     max-width: 100%;
   }
@@ -924,11 +930,11 @@ footer > div:last-of-type h4 img {
     bottom: 2rem;
   }
   .events .info #number {
-    padding: 0 40px 0 0;
+    padding: 0 30px 0 0;
   }
   .events .info p {
     max-width: 100%;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .events .info .buttons {
     margin-top: 1.5rem;
@@ -1011,6 +1017,41 @@ footer > div:last-of-type h4 img {
   }
   .statue > div:last-of-type div h3 img {
     zoom: 0.7;
+  }
+  .events .info > div > div:not(.buttons) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .events .info .name h1 {
+    font-size: 1.7rem;
+  }
+  .events .info .name img {
+    padding: 0 6px 0 0;
+  }
+  .events .info > img {
+    height: 350px;
+  }
+  .events .info h3 {
+    font-size: initial;
+  }
+  .events .info p {
+    display: none;
+  }
+  .events .eventContainer {
+    min-height: 350px;
+  }
+  .events > article:last-of-type {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 1.5rem;
+  }
+  .events > article:last-of-type .outerProgress {
+    margin-top: 1rem;
   }
   .gallery > div {
     -moz-column-count: 2;
