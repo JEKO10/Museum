@@ -207,12 +207,17 @@
     }
   }
 
-  .slider > div {
+  .slider > div:not(.outer) {
     flex-direction: column;
     margin-bottom: 3rem;
 
     #leftArrow {
       display: none;
+    }
+
+    #fixedArrow {
+      display: block;
+      height: 75px;
     }
 
     > div {
@@ -361,6 +366,20 @@
       .outerProgress {
         margin-top: 1rem;
       }
+    }
+  }
+
+  .slider {
+    > div:not(.outer) {
+      margin-bottom: 1rem;
+
+      > div:first-of-type > img {
+        zoom: 0.55;
+      }
+    }
+
+    #main {
+      width: 400px;
     }
   }
 

@@ -493,9 +493,6 @@ header .hero {
       -ms-flex-align: center;
           align-items: center;
 }
-.slider > div:not(.outer) > div #fixedArrow {
-  display: none;
-}
 .slider > div:not(.outer) > div:first-of-type > img:not(#main) {
   height: 443px;
   width: 306px;
@@ -513,6 +510,9 @@ header .hero {
      border-image: linear-gradient(rgb(225, 225, 225), rgba(0, 0, 0, 0)) 15/35px;
   height: 655px;
   width: 420px;
+}
+.slider #fixedArrow {
+  display: none;
 }
 .slider .outer {
   background: #484848;
@@ -939,23 +939,27 @@ footer > div:last-of-type h4 img {
   .events .info .buttons {
     margin-top: 1.5rem;
   }
-  .slider > div {
+  .slider > div:not(.outer) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 3rem;
   }
-  .slider > div #leftArrow {
+  .slider > div:not(.outer) #leftArrow {
     display: none;
   }
-  .slider > div > div {
+  .slider > div:not(.outer) #fixedArrow {
+    display: block;
+    height: 75px;
+  }
+  .slider > div:not(.outer) > div {
     margin-bottom: 3rem;
   }
-  .slider > div > div #fixedArrow {
+  .slider > div:not(.outer) > div #fixedArrow {
     display: block;
   }
-  .slider > div > div img {
+  .slider > div:not(.outer) > div img {
     zoom: 0.65;
   }
   .product > div:first-of-type > img {
@@ -1052,6 +1056,15 @@ footer > div:last-of-type h4 img {
   }
   .events > article:last-of-type .outerProgress {
     margin-top: 1rem;
+  }
+  .slider > div:not(.outer) {
+    margin-bottom: 1rem;
+  }
+  .slider > div:not(.outer) > div:first-of-type > img {
+    zoom: 0.55;
+  }
+  .slider #main {
+    width: 400px;
   }
   .gallery > div {
     -moz-column-count: 2;
