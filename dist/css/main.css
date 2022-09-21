@@ -990,6 +990,28 @@ footer > div:last-of-type h4 img {
   header > div h1 {
     font-size: 3rem;
   }
+  .statue {
+    margin: 10rem 0;
+  }
+  .statue > div:first-of-type h1 {
+    font-size: 3.5rem;
+  }
+  .statue > div:first-of-type img {
+    zoom: 0.45;
+  }
+  .statue > div:first-of-type #vector {
+    width: 83%;
+    height: 37%;
+  }
+  .statue > div:last-of-type p:first-of-type {
+    font-size: 1.15rem;
+  }
+  .statue > div:last-of-type div h3 {
+    font-size: 1.5rem;
+  }
+  .statue > div:last-of-type div h3 img {
+    zoom: 0.7;
+  }
   .gallery > div {
     -moz-column-count: 2;
     -webkit-column-count: 2;

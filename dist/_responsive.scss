@@ -279,6 +279,39 @@
     }
   }
 
+  .statue {
+    margin: 10rem 0;
+
+    > div:first-of-type {
+      h1 {
+        font-size: 3.5rem;
+      }
+
+      img {
+        zoom: 0.45;
+      }
+
+      #vector {
+        width: 83%;
+        height: 37%;
+      }
+    }
+
+    > div:last-of-type {
+      p:first-of-type {
+        font-size: 1.15rem;
+      }
+
+      div h3 {
+        font-size: 1.5rem;
+
+        img {
+          zoom: 0.7;
+        }
+      }
+    }
+  }
+
   .gallery > div {
     -moz-column-count: 2;
     -webkit-column-count: 2;
