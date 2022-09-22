@@ -388,6 +388,39 @@
     -webkit-column-count: 2;
     column-count: 2;
   }
+
+  footer {
+    flex-direction: column;
+    padding: 0 50px;
+
+    > div:first-of-type {
+      flex-direction: column;
+      margin-bottom: 4rem;
+
+      ul {
+        @include flex(space-between, center);
+        flex-wrap: wrap;
+        margin-right: 0;
+
+        li:first-child {
+          text-align: center;
+          width: 100%;
+        }
+
+        li {
+          padding: 10px;
+        }
+      }
+    }
+
+    div:last-of-type {
+      width: 100%;
+
+      form button {
+        width: 50%;
+      }
+    }
+  }
 }
 
 @include mediaSmall {
