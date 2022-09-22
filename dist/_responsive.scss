@@ -389,6 +389,47 @@
     column-count: 2;
   }
 
+  .product {
+    > div:first-of-type {
+      justify-content: center;
+
+      img {
+        display: none;
+      }
+
+      h1 {
+        padding: 0 20px;
+      }
+    }
+
+    .images {
+      .info {
+        margin-right: 0.5rem;
+
+        img {
+          zoom: 0.4;
+        }
+
+        > div {
+          left: 1rem;
+          bottom: 1rem;
+
+          h1 {
+            font-size: 2.5rem;
+          }
+
+          h3 {
+            letter-spacing: initial;
+          }
+        }
+      }
+
+      .second img {
+        zoom: 0.39;
+      }
+    }
+  }
+
   footer {
     flex-direction: column;
     padding: 0 50px;
