@@ -1189,6 +1189,15 @@ footer > div:last-of-type h4 img {
   .events .info .buttons {
     padding: 0;
   }
+  .gallery {
+    margin: 10rem auto 5rem;
+  }
+  .slider {
+    margin: 5rem auto;
+  }
+  .slider > div:not(.outer) > div:first-of-type > img {
+    zoom: 0.45;
+  }
 }
 @media screen and (max-width: 480px) {
   .gallery > div {

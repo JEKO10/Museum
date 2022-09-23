@@ -538,6 +538,18 @@
       }
     }
   }
+
+  .gallery {
+    margin: 10rem auto 5rem;
+  }
+
+  .slider {
+    margin: 5rem auto;
+
+    > div:not(.outer) > div:first-of-type > img {
+      zoom: 0.45;
+    }
+  }
 }
 
 @include mediaSmall {
