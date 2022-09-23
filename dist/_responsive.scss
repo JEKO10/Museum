@@ -464,6 +464,21 @@
   }
 }
 
+@include mediaMediumLow {
+  header {
+    height: 80vh;
+    background-position: 150% 60px;
+
+    > div {
+      height: 20%;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
 @include mediaSmall {
   .gallery > div {
     -moz-column-count: 1;

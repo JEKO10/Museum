@@ -1136,6 +1136,18 @@ footer > div:last-of-type h4 img {
     width: 50%;
   }
 }
+@media screen and (max-width: 576px) {
+  header {
+    height: 80vh;
+    background-position: 150% 60px;
+  }
+  header > div {
+    height: 20%;
+  }
+  header > div h1 {
+    font-size: 2.5rem;
+  }
+}
 @media screen and (max-width: 480px) {
   .gallery > div {
     -moz-column-count: 1;
