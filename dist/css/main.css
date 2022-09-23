@@ -886,6 +886,7 @@ footer > div:last-of-type h4 img {
     max-width: 100%;
     margin-bottom: 3rem;
     font-size: 1.5rem;
+    padding-right: 0;
   }
   .statue > div:last-of-type div h3 {
     position: static;
@@ -1146,6 +1147,23 @@ footer > div:last-of-type h4 img {
   }
   header > div h1 {
     font-size: 2.5rem;
+  }
+  .statue > div {
+    max-width: 90vw;
+  }
+  .statue > div:first-of-type h1 {
+    font-size: 3rem;
+  }
+  .statue > div:first-of-type img {
+    zoom: 0.39;
+  }
+  .statue > div:first-of-type #vector {
+    top: -7rem;
+    width: 85%;
+    height: 42%;
+  }
+  .statue > div:last-of-type p:first-of-type {
+    font-size: 1.05rem;
   }
 }
 @media screen and (max-width: 480px) {

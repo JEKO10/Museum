@@ -148,6 +148,7 @@
         max-width: 100%;
         margin-bottom: 3rem;
         font-size: 1.5rem;
+        padding-right: 0;
       }
 
       div h3 {
@@ -477,8 +478,32 @@
       }
     }
   }
-}
 
+  .statue {
+    > div {
+      max-width: 90vw;
+    }
+
+    > div:first-of-type {
+      h1 {
+        font-size: 3rem;
+      }
+
+      img {
+        zoom: 0.39;
+      }
+
+      #vector {
+        top: -7rem;
+        width: 85%;
+        height: 42%;
+      }
+    }
+    > div:last-of-type p:first-of-type {
+      font-size: 1.05rem;
+    }
+  }
+}
 @include mediaSmall {
   .gallery > div {
     -moz-column-count: 1;
