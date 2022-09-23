@@ -183,6 +183,8 @@
       }
 
       .name {
+        margin-left: 0;
+
         h1 {
           max-width: 100%;
         }
@@ -499,11 +501,45 @@
         height: 42%;
       }
     }
+
     > div:last-of-type p:first-of-type {
       font-size: 1.05rem;
     }
   }
+
+  .events {
+    > article:first-of-type h1 {
+      font-size: 4rem;
+    }
+
+    .eventContainer {
+      min-height: 300px;
+    }
+
+    .info {
+      > img {
+        height: 300px;
+      }
+
+      .name h1 {
+        font-size: 1.5rem;
+      }
+
+      #number {
+        padding: 0;
+      }
+
+      > div {
+        text-align: center;
+      }
+
+      .buttons {
+        padding: 0;
+      }
+    }
+  }
 }
+
 @include mediaSmall {
   .gallery > div {
     -moz-column-count: 1;

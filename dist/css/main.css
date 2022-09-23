@@ -916,6 +916,9 @@ footer > div:last-of-type h4 img {
   .events .info > img {
     height: 450px;
   }
+  .events .info .name {
+    margin-left: 0;
+  }
   .events .info .name h1 {
     max-width: 100%;
   }
@@ -1164,6 +1167,27 @@ footer > div:last-of-type h4 img {
   }
   .statue > div:last-of-type p:first-of-type {
     font-size: 1.05rem;
+  }
+  .events > article:first-of-type h1 {
+    font-size: 4rem;
+  }
+  .events .eventContainer {
+    min-height: 300px;
+  }
+  .events .info > img {
+    height: 300px;
+  }
+  .events .info .name h1 {
+    font-size: 1.5rem;
+  }
+  .events .info #number {
+    padding: 0;
+  }
+  .events .info > div {
+    text-align: center;
+  }
+  .events .info .buttons {
+    padding: 0;
   }
 }
 @media screen and (max-width: 480px) {
