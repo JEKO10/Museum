@@ -1198,6 +1198,18 @@ footer > div:last-of-type h4 img {
   .slider > div:not(.outer) > div:first-of-type > img {
     zoom: 0.45;
   }
+  .product .images .info img {
+    zoom: 0.35;
+  }
+  .product .images .info > div h1 {
+    font-size: 2rem;
+  }
+  .product .images .info > div h3 {
+    font-size: 1rem;
+  }
+  .product .images .second img {
+    zoom: 0.34;
+  }
 }
 @media screen and (max-width: 480px) {
   .gallery > div {

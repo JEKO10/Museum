@@ -550,6 +550,28 @@
       zoom: 0.45;
     }
   }
+
+  .product .images {
+    .info {
+      img {
+        zoom: 0.35;
+      }
+
+      > div {
+        h1 {
+          font-size: 2rem;
+        }
+
+        h3 {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .second img {
+      zoom: 0.34;
+    }
+  }
 }
 
 @include mediaSmall {
