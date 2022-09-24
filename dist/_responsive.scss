@@ -125,9 +125,15 @@
   .statue {
     > img {
       &#horizontal {
-        height: 70%;
+        height: 60%;
+      }
+
+      &#vertical {
+        height: 100%;
+        width: 30%;
       }
     }
+
     > div:first-of-type {
       img {
         zoom: 0.5;
@@ -297,6 +303,16 @@
 
   .statue {
     margin: 10rem 0;
+
+    > img {
+      &#horizontal {
+        height: 65%;
+      }
+
+      &#vertical {
+        width: 45%;
+      }
+    }
 
     > div:first-of-type {
       h1 {

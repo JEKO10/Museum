@@ -865,7 +865,11 @@ footer > div:last-of-type h4 img {
     display: none;
   }
   .statue > img#horizontal {
-    height: 70%;
+    height: 60%;
+  }
+  .statue > img#vertical {
+    height: 100%;
+    width: 30%;
   }
   .statue > div:first-of-type img {
     zoom: 0.5;
@@ -999,6 +1003,12 @@ footer > div:last-of-type h4 img {
   }
   .statue {
     margin: 10rem 0;
+  }
+  .statue > img#horizontal {
+    height: 65%;
+  }
+  .statue > img#vertical {
+    width: 45%;
   }
   .statue > div:first-of-type h1 {
     font-size: 3.5rem;
