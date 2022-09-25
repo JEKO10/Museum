@@ -1223,13 +1223,38 @@ footer > div:last-of-type h4 img {
 }
 @media screen and (max-width: 480px) {
   header {
-    height: 65vh;
+    height: 66.5vh;
+    background-position: 290% 80px;
   }
   header div {
     bottom: -2.5rem;
+    height: 18%;
   }
   header div h1 {
     font-size: 1.6rem;
+  }
+  .statue > img#vertical {
+    width: 55%;
+    height: 105%;
+  }
+  .statue > div:first-of-type {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .statue > div:first-of-type h1 {
+    text-align: center;
+  }
+  .statue > div:first-of-type img {
+    margin-left: 0;
+    zoom: 0.3;
+  }
+  .statue > div:first-of-type #vector {
+    display: none;
+  }
+  .statue > div:last-of-type p:first-of-type {
+    font-size: 1rem;
   }
   nav ul li {
     padding: 15px 0;
