@@ -591,6 +591,24 @@
 }
 
 @include mediaSmall {
+  header {
+    height: 65vh;
+
+    div {
+      bottom: -2.5rem;
+
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  nav {
+    ul li {
+      padding: 15px 0;
+    }
+  }
+
   .gallery > div {
     -moz-column-count: 1;
     -webkit-column-count: 1;
