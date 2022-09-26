@@ -1291,6 +1291,12 @@ footer > div:last-of-type h4 img {
   .gallery > div img {
     margin: 0.5rem 0;
   }
+  .slider > div:not(.outer) > div:first-of-type > img {
+    zoom: 0.3;
+  }
+  .slider #main {
+    height: 625px;
+  }
 }
 * {
   margin: 0;

@@ -684,4 +684,14 @@
       margin: 0.5rem 0;
     }
   }
+
+  .slider {
+    > div:not(.outer) > div:first-of-type > img {
+      zoom: 0.3;
+    }
+
+    #main {
+      height: 625px;
+    }
+  }
 }
