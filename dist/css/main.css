@@ -1233,6 +1233,9 @@ footer > div:last-of-type h4 img {
   header div h1 {
     font-size: 1.6rem;
   }
+  nav ul li {
+    padding: 15px 0;
+  }
   .statue > img#vertical {
     width: 55%;
     height: 105%;
@@ -1256,8 +1259,29 @@ footer > div:last-of-type h4 img {
   .statue > div:last-of-type p:first-of-type {
     font-size: 1rem;
   }
-  nav ul li {
-    padding: 15px 0;
+  .events .eventContainer {
+    min-height: 250px;
+  }
+  .events .info > img {
+    height: 250px;
+  }
+  .events .info > div {
+    bottom: 1rem;
+  }
+  .events .info #number {
+    font-size: 2.3rem;
+  }
+  .events .info h3 {
+    font-size: 0.9rem;
+  }
+  .events .info .name h1 {
+    text-align: center;
+  }
+  .events .info .buttons {
+    margin-top: 0.5rem;
+  }
+  .events .info .buttons h2 {
+    font-size: 1rem;
   }
   .gallery > div {
     -moz-column-count: 1;
