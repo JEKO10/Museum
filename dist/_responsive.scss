@@ -694,4 +694,33 @@
       height: 625px;
     }
   }
+
+  .product {
+    > div:first-of-type h1 {
+      font-size: 3.5rem;
+    }
+
+    .images {
+      .info {
+        img {
+          zoom: 0.25;
+        }
+
+        > div {
+          h1 {
+            font-size: 1.5rem;
+          }
+
+          h3 {
+            font-size: 0.8rem;
+            line-height: 20px;
+          }
+        }
+      }
+
+      .second img {
+        zoom: 0.24;
+      }
+    }
+  }
 }

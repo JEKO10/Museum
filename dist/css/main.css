@@ -1297,6 +1297,22 @@ footer > div:last-of-type h4 img {
   .slider #main {
     height: 625px;
   }
+  .product > div:first-of-type h1 {
+    font-size: 3.5rem;
+  }
+  .product .images .info img {
+    zoom: 0.25;
+  }
+  .product .images .info > div h1 {
+    font-size: 1.5rem;
+  }
+  .product .images .info > div h3 {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+  .product .images .second img {
+    zoom: 0.24;
+  }
 }
 * {
   margin: 0;
