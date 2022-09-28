@@ -1,25 +1,23 @@
 header {
   background: url("../../images/ellipse.png") no-repeat;
   background-size: 72%;
-  height: 110vh;
-  background-position: 100% 100px;
+  height: 115vh;
+  background-position: 110% 100px;
   color: #fff;
   position: relative;
 
-  > div {
-    position: absolute;
-    bottom: -7rem;
-    left: 0;
+  .hero {
+    background: url("../../images/hero.png") center no-repeat;
+    height: 100%;
+    @include flex(flex-end, flex-end);
+  }
+
+  div {
     background-color: rgba(17, 17, 17, 0.5);
     width: 100%;
-    height: 30%;
 
     h1 {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
+      margin: 0 auto;
       font-size: 91px;
       font-family: $secondaryFont;
       font-weight: 400;
@@ -28,10 +26,5 @@ header {
       text-align: center;
       padding: 0 20px;
     }
-  }
-
-  .hero {
-    background: url("../../images/hero.png") center no-repeat;
-    height: 100%;
   }
 }

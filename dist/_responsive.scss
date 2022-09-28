@@ -1,6 +1,6 @@
 @include mediaLarge {
   header {
-    > div {
+    div {
       h1 {
         font-size: 5rem;
       }
@@ -77,18 +77,14 @@
 
 @include mediaMediumLarge {
   header {
-    background-size: 80%;
-    background-position: 105% 30px;
     height: 95vh;
 
     .hero {
-      background-size: 98%;
+      background-size: 89%;
       background-position: bottom;
     }
 
-    > div {
-      bottom: -3rem;
-
+    div {
       h1 {
         font-size: 4rem;
       }
@@ -285,16 +281,13 @@
 @include mediaMedium {
   header {
     height: 90vh;
-    background-size: 95%;
-    background-position: 150% 50px;
+    background-size: 80%;
 
     .hero {
-      background-size: 130%;
+      background-size: 100%;
     }
 
-    > div {
-      height: 25%;
-
+    div {
       h1 {
         font-size: 3rem;
       }
@@ -423,7 +416,7 @@
 
     .images {
       .info {
-        margin-right: 0.5rem;
+        margin-right: 0.2rem;
 
         img {
           zoom: 0.4;
@@ -486,11 +479,8 @@
 @include mediaMediumLow {
   header {
     height: 80vh;
-    background-position: 150% 60px;
 
-    > div {
-      height: 20%;
-
+    div {
       h1 {
         font-size: 2.5rem;
       }
@@ -592,13 +582,11 @@
 
 @include mediaSmall {
   header {
-    height: 66.5vh;
-    background-position: 290% 80px;
+    height: 55vh;
+    background-size: 78%;
+    background-position: 110% 70px;
 
     div {
-      bottom: -2.5rem;
-      height: 18%;
-
       h1 {
         font-size: 1.6rem;
       }
@@ -707,6 +695,9 @@
         }
 
         > div {
+          left: 0.5rem;
+          bottom: 0.5rem;
+
           h1 {
             font-size: 1.5rem;
           }
@@ -720,6 +711,24 @@
 
       .second img {
         zoom: 0.24;
+      }
+    }
+  }
+
+  footer {
+    padding: 0 30px;
+
+    div:last-of-type {
+      form button {
+        width: 100%;
+      }
+
+      h4 {
+        flex-direction: column;
+
+        img {
+          margin: 0 0 0.5rem 0;
+        }
       }
     }
   }

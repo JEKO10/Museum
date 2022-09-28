@@ -81,25 +81,30 @@ nav .menuBtn .menuBurger.open::after {
 header {
   background: url("../../images/ellipse.png") no-repeat;
   background-size: 72%;
-  height: 110vh;
-  background-position: 100% 100px;
+  height: 115vh;
+  background-position: 110% 100px;
   color: #fff;
   position: relative;
 }
-header > div {
-  position: absolute;
-  bottom: -7rem;
-  left: 0;
+header .hero {
+  background: url("../../images/hero.png") center no-repeat;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+header div {
   background-color: rgba(17, 17, 17, 0.5);
   width: 100%;
-  height: 30%;
 }
-header > div h1 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+header div h1 {
+  margin: 0 auto;
   font-size: 91px;
   font-family: "Bellefair", serif;
   font-weight: 400;
@@ -107,10 +112,6 @@ header > div h1 {
   max-width: 1140px;
   text-align: center;
   padding: 0 20px;
-}
-header .hero {
-  background: url("../../images/hero.png") center no-repeat;
-  height: 100%;
 }
 
 .statue {
@@ -770,7 +771,7 @@ footer > div:last-of-type h4 img {
 }
 
 @media (max-width: 1200px) {
-  header > div h1 {
+  header div h1 {
     font-size: 5rem;
   }
   .statue > div:first-of-type h1 {
@@ -824,18 +825,13 @@ footer > div:last-of-type h4 img {
 }
 @media screen and (max-width: 992px) {
   header {
-    background-size: 80%;
-    background-position: 105% 30px;
     height: 95vh;
   }
   header .hero {
-    background-size: 98%;
+    background-size: 89%;
     background-position: bottom;
   }
-  header > div {
-    bottom: -3rem;
-  }
-  header > div h1 {
+  header div h1 {
     font-size: 4rem;
   }
   nav .menuBtn {
@@ -989,16 +985,12 @@ footer > div:last-of-type h4 img {
 @media screen and (max-width: 768px) {
   header {
     height: 90vh;
-    background-size: 95%;
-    background-position: 150% 50px;
+    background-size: 80%;
   }
   header .hero {
-    background-size: 130%;
+    background-size: 100%;
   }
-  header > div {
-    height: 25%;
-  }
-  header > div h1 {
+  header div h1 {
     font-size: 3rem;
   }
   .statue {
@@ -1090,7 +1082,7 @@ footer > div:last-of-type h4 img {
     padding: 0 20px;
   }
   .product .images .info {
-    margin-right: 0.5rem;
+    margin-right: 0.2rem;
   }
   .product .images .info img {
     zoom: 0.4;
@@ -1153,12 +1145,8 @@ footer > div:last-of-type h4 img {
 @media screen and (max-width: 576px) {
   header {
     height: 80vh;
-    background-position: 150% 60px;
   }
-  header > div {
-    height: 20%;
-  }
-  header > div h1 {
+  header div h1 {
     font-size: 2.5rem;
   }
   .statue > div {
@@ -1223,12 +1211,9 @@ footer > div:last-of-type h4 img {
 }
 @media screen and (max-width: 480px) {
   header {
-    height: 66.5vh;
-    background-position: 290% 80px;
-  }
-  header div {
-    bottom: -2.5rem;
-    height: 18%;
+    height: 55vh;
+    background-size: 78%;
+    background-position: 110% 70px;
   }
   header div h1 {
     font-size: 1.6rem;
@@ -1303,6 +1288,10 @@ footer > div:last-of-type h4 img {
   .product .images .info img {
     zoom: 0.25;
   }
+  .product .images .info > div {
+    left: 0.5rem;
+    bottom: 0.5rem;
+  }
   .product .images .info > div h1 {
     font-size: 1.5rem;
   }
@@ -1312,6 +1301,21 @@ footer > div:last-of-type h4 img {
   }
   .product .images .second img {
     zoom: 0.24;
+  }
+  footer {
+    padding: 0 30px;
+  }
+  footer div:last-of-type form button {
+    width: 100%;
+  }
+  footer div:last-of-type h4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer div:last-of-type h4 img {
+    margin: 0 0 0.5rem 0;
   }
 }
 * {
