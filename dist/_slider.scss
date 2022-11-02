@@ -13,11 +13,9 @@
     > div {
       @include flex(center, center);
 
-      &:first-of-type {
-        > img:not(#main) {
-          height: 443px;
-          width: 306px;
-        }
+      &:first-of-type > img:not(#main) {
+        height: 443px;
+        width: 306px;
       }
     }
   }

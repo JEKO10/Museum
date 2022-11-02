@@ -2,17 +2,6 @@ const menuBtn = document.querySelector(".menuBtn");
 const menuBurger = document.querySelector(".menuBurger");
 const navList = document.querySelector("nav ul");
 
-menuBtn.addEventListener("click", () => {
-  menuBurger.classList.toggle("open");
-  navList.classList.toggle("hide");
-
-  if (menuBurger.classList.contains("open")) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "auto";
-  }
-});
-
 const left = document.querySelectorAll(".left");
 const rightArrow = document.querySelector("#rightArrow");
 const firstImg = document.querySelector("#firstImg");
@@ -27,6 +16,26 @@ const images = [
   "./images/slider1.png",
 ];
 
+const prev = document.querySelector("#prev");
+const next = document.querySelector("#next");
+const slides = document.querySelectorAll(".eventContainer .info");
+const innerProgress = document.querySelector(".innerProgress");
+let slideCounter = 0;
+let progressLeft;
+
+// Nav
+menuBtn.addEventListener("click", () => {
+  menuBurger.classList.toggle("open");
+  navList.classList.toggle("hide");
+
+  if (menuBurger.classList.contains("open")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+});
+
+// Slider
 left.forEach((leftArrow) => {
   leftArrow.addEventListener("click", () => {
     counter--;
@@ -63,13 +72,7 @@ rightArrow.addEventListener("click", () => {
   main.src = images[counter];
 });
 
-const prev = document.querySelector("#prev");
-const next = document.querySelector("#next");
-const slides = document.querySelectorAll(".eventContainer .info");
-const innerProgress = document.querySelector(".innerProgress");
-let slideCounter = 0;
-let progressLeft;
-
+// Events
 slides.forEach((slide, index) => {
   slide.style.left = `${index * 105}%`;
 });
@@ -86,7 +89,6 @@ next.addEventListener("click", function () {
   if (slideCounter === 3) progressLeft = 75;
   if (slideCounter === 4) progressLeft = 92;
   innerProgress.style.left = progressLeft + "%";
-  console.log(slideCounter);
 });
 
 prev.addEventListener("click", function () {
@@ -101,5 +103,4 @@ prev.addEventListener("click", function () {
   if (slideCounter === 2) progressLeft = 50;
   if (slideCounter === 3) progressLeft = 75;
   innerProgress.style.left = progressLeft + "%";
-  console.log(slideCounter);
 });
