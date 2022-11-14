@@ -17,7 +17,7 @@ Their website: http://www.uxmcreativestudio.com/
 
 ## Project overview
 
-Using figma I exported design which i turned into site. This is digital museum, with events and products. I created button to visit their store and contact form. I used JS for fixed navbar, events and images slider. 
+Using figma I exported design which i turned into site. This is digital museum, with events and products. I created button to visit store and contact form. I used JS for fixed navbar, events and images slider. 
 
 ## Built with
 
