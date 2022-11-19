@@ -12,12 +12,12 @@
 
 ## Project task
 
-Beautiful design by UXM Creative Studio that I turned into a site. I used figma to export their design. Project is not finished yet.
+Beautiful design by UXM Creative Studio that I turned into a site. I used Figma to export their design. The project is not finished yet.
 Their website: http://www.uxmcreativestudio.com/
 
 ## Project overview
 
-Using figma I exported design which i turned into site. This is digital museum, with events and products. I created button to visit store and contact form. I used JS for fixed navbar, events and images slider. 
+Using Figma I exported the design which I turned into a site. This is a digital museum, with events and products. I created a button to visit the store and a contact form. I used JS for the fixed navbar, events, and images slider. 
 
 ## Built with
 
